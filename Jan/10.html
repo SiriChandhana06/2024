@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.cs">
+    <style>
+        svg:hover{
+            background-color: #e8317e;
+        }
+        svg {
+            transition: all 0.3s linear;
+        }
+ 
+        svg:hover {
+            transform: scale(1.5);
+        }
+        #vid > svg:hover{
+        background-color: initial;
+        transform: initial; 
+        }
+        #cd > svg:hover{
+        background-color: initial;
+        transform: initial; 
+        }
+        #vid{
+            text-decoration-color: none;
+        }
+        body{
+           background-color: black;
+        }
+        #abc{
+            background-image: url(mountain.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        button:hover{
+            background-color: #e8317e;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flex">
+    <div>
+        <nav class="sticky block w-24 bg-black">
+            <div id="vid" class="pt-8 flex justify-center">
+                <svg class="p-2" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"><path fill="#E8317E" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18M10.783 7.99l5.644 3.136a1 1 0 0 1 0 1.748l-5.644 3.136A1.2 1.2 0 0 1 9 14.96V9.04a1.2 1.2 0 0 1 1.783-1.05" clip-rule="evenodd"/></svg>
+            </div>
+            <div id="home" class="pt-8 flex justify-center">
+                <svg class="p-2 " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M39.5,43h-9c-1.381,0 -2.5,-1.119 -2.5,-2.5v-9c0,-1.105 -0.895,-2 -2,-2h-4c-1.105,0 -2,0.895 -2,2v9c0,1.381 -1.119,2.5 -2.5,2.5h-9c-1.381,0 -2.5,-1.119 -2.5,-2.5v-19.087c0,-2.299 1.054,-4.471 2.859,-5.893l14.212,-11.199c0.545,-0.428 1.313,-0.428 1.857,0l14.214,11.199c1.805,1.422 2.858,3.593 2.858,5.891v19.089c0,1.381 -1.119,2.5 -2.5,2.5z"></path></g></g>
+                    </svg>
+            </div>
+            <div id="profile" class="pt-6 flex justify-center">
+                <svg class="p-2 " xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 512 512"><path fill="#ffffff" d="M332.64 64.58C313.18 43.57 286 32 256 32c-30.16 0-57.43 11.5-76.8 32.38c-19.58 21.11-29.12 49.8-26.88 80.78C156.76 206.28 203.27 256 256 256s99.16-49.71 103.67-110.82c2.27-30.7-7.33-59.33-27.03-80.6M432 480H80a31 31 0 0 1-24.2-11.13c-6.5-7.77-9.12-18.38-7.18-29.11C57.06 392.94 83.4 353.61 124.8 326c36.78-24.51 83.37-38 131.2-38s94.42 13.5 131.2 38c41.4 27.6 67.74 66.93 76.18 113.75c1.94 10.73-.68 21.34-7.18 29.11A31 31 0 0 1 432 480"/>
+                </svg>
+            </div>
+            <div id="time" class="pt-6 flex justify-center">
+                <svg class="p-2 " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,2c-5.523,0 -10,4.477 -10,10c0,5.523 4.477,10 10,10c5.523,0 10,-4.477 10,-10c0,-5.523 -4.477,-10 -10,-10zM15.293,16.707l-4.293,-4.293v-6.414h2v5.586l3.707,3.707z"></path></g></g>
+                </svg>
+            </div>
+            <div id="video" class="pt-6 flex justify-center">
+                <svg class="p-2 " xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 20 20"><path fill="#ffffff" d="M20 5V3.799A.798.798 0 0 0 19.201 3H.801A.8.8 0 0 0 0 3.799V5h2v2H0v2h2v2H0v2h2v2H0v1.199A.8.8 0 0 0 .801 17h18.4a.8.8 0 0 0 .799-.801V15h-2v-2h2v-2h-2V9h2V7h-2V5zM8 13V7l5 3z"/></svg>
+            </div>
+            <div id="videotimer" class="pt-6 flex justify-center">
+                <svg class="p-2 " xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 2048 2048"><path fill="#ffffff" d="M2048 256v639q-28-28-60-50t-68-42V384h-128v128h-128V384H384v128H256V384H128v1152h128v-128h128v128h707l-128 128H0V256zm-256 384v113q-32-8-64-12t-64-5v-96zM384 1024H256V896h128zm0-256H256V640h128zm-128 384h128v128H256zm1408-256q79 0 149 30t122 82t83 123t30 149q0 80-30 149t-82 122t-123 83t-149 30q-60 0-116-18t-106-54l-437 437q-19 19-45 19t-45-19t-19-45q0-26 19-45l437-437q-35-49-53-105t-19-117q0-79 30-149t82-122t122-83t150-30m0 640q53 0 99-20t82-55t55-81t20-100q0-53-20-99t-55-82t-81-55t-100-20q-53 0-99 20t-82 55t-55 81t-20 100q0 53 20 99t55 82t81 55t100 20"/></svg>
+            </div>
+            <div id="settings" class="pt-6 flex justify-center">
+                <svg class="p-2 " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.49023,2c-0.479,0 -0.88847,0.33859 -0.98047,0.80859l-0.33398,1.71484c-0.82076,0.31036 -1.57968,0.74397 -2.24609,1.29102l-1.64453,-0.56641c-0.453,-0.156 -0.95141,0.03131 -1.19141,0.44531l-1.50781,2.61328c-0.239,0.415 -0.15202,0.94186 0.20898,1.25586l1.31836,1.14648c-0.06856,0.42135 -0.11328,0.8503 -0.11328,1.29102c0,0.44072 0.04472,0.86966 0.11328,1.29102l-1.31836,1.14648c-0.361,0.314 -0.44798,0.84086 -0.20898,1.25586l1.50781,2.61328c0.239,0.415 0.73841,0.60227 1.19141,0.44727l1.64453,-0.56641c0.6662,0.54671 1.42571,0.97884 2.24609,1.28906l0.33398,1.71484c0.092,0.47 0.50147,0.80859 0.98047,0.80859h3.01953c0.479,0 0.88847,-0.33859 0.98047,-0.80859l0.33399,-1.71484c0.82076,-0.31036 1.57968,-0.74397 2.24609,-1.29102l1.64453,0.56641c0.453,0.156 0.95141,-0.03031 1.19141,-0.44531l1.50781,-2.61523c0.239,-0.415 0.15202,-0.93991 -0.20898,-1.25391l-1.31836,-1.14648c0.06856,-0.42135 0.11328,-0.8503 0.11328,-1.29102c0,-0.44072 -0.04472,-0.86966 -0.11328,-1.29102l1.31836,-1.14648c0.361,-0.314 0.44798,-0.84086 0.20898,-1.25586l-1.50781,-2.61328c-0.239,-0.415 -0.73841,-0.60227 -1.19141,-0.44727l-1.64453,0.56641c-0.6662,-0.54671 -1.42571,-0.97884 -2.24609,-1.28906l-0.33399,-1.71484c-0.092,-0.47 -0.50147,-0.80859 -0.98047,-0.80859zM12,8c2.209,0 4,1.791 4,4c0,2.209 -1.791,4 -4,4c-2.209,0 -4,-1.791 -4,-4c0,-2.209 1.791,-4 4,-4z"></path></g></g>
+                </svg>
+            </div>
+            <div id="error" class="pt-6 flex justify-center">
+                <svg class="p-2 " xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="#ffffff" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m1 15h-2v-2h2zm0-4h-2V7h2z"/></svg>
+            </div>
+            <div id="question" class="pt-6 flex justify-center">
+                <svg class="p-2 " xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#ffffff" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 14a1 1 0 1 0 0 2a1 1 0 0 0 0-2m0-9.5a3.625 3.625 0 0 0-3.625 3.625a1 1 0 1 0 2 0a1.625 1.625 0 1 1 2.23 1.51c-.676.27-1.605.962-1.605 2.115V14a1 1 0 1 0 2 0c0-.244.05-.366.261-.47l.087-.04A3.626 3.626 0 0 0 12 6.5"/></g></svg>
+            </div>
+            <div class="pb-20">
+                <h1>.</h1>
+            </div>
+           </nav>
+    </div>
+<div>
+<div id="abc" class="flex justify-start gap-20">
+   <main> 
+    <div class=" flex gap-20 pl-16">
+    <div id="search" class=" pt-8 relative mb-4 flex w-96 flex-wrap items-stretch">
+        <input
+      type="search"
+      class="relative m-0 -mr-0.5 block min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-black bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-white outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+      placeholder="Cute Cats"
+      aria-label="Cute cats"
+      aria-describedby="button-addon1" />
+    <button
+      class="relative z-[2] flex items-center rounded-l bg-pink-600 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+      type="button"
+      id="button-addon1"
+      data-te-ripple-init
+      data-te-ripple-color="light">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+          clip-rule="evenodd" />
+      </svg>
+    </button>
+    </div>
+    <div class="flex pt-8">
+    <div id="side" class="flex gap-4" style="padding-left: 600px;">
+        <svg class="" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#ffffff" d="M22.525 7.149a.997.997 0 0 0-.972-.044L19 8.382V8c0-1.654-1.346-3-3-3H5C3.346 5 2 6.346 2 8v8c0 1.654 1.346 3 3 3h11c1.654 0 3-1.346 3-3v-.382l2.553 1.276a.992.992 0 0 0 .972-.043c.295-.183.475-.504.475-.851V8c0-.347-.18-.668-.475-.851M7 13.5a1.5 1.5 0 1 1-.001-2.999A1.5 1.5 0 0 1 7 13.5"/></svg>
+        <svg class="" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#ffffff" d="M21 6.5c0 1.93-1.57 3.5-3.5 3.5S14 8.43 14 6.5S15.57 3 17.5 3S21 4.57 21 6.5m-2 5.29c-.5.13-1 .21-1.5.21A5.51 5.51 0 0 1 12 6.5c0-1.47.58-2.8 1.5-3.79A1.93 1.93 0 0 0 12 2c-1.1 0-2 .9-2 2v.29C7.03 5.17 5 7.9 5 11v6l-2 2v1h18v-1l-2-2zM12 23c1.11 0 2-.89 2-2h-4a2 2 0 0 0 2 2"/></svg>
+        <img class="rounded-full h-10 w-10" src="profile.jpg">
+    </div>
+    </div>
+    </div>
+    <h1 class="text-6xl text-black font-bold pt-6 pl-16">Your Gateway<br>
+    to Unlimited <br>
+Entertainment</h1>
+    <div id="cd" class="flex">
+        <h1 class="text-2xl font-bold text-black pt-4 pl-16">With Our seamless streaming Technology, You Can <br>
+        Effortlessly discover and Enjoy Content that resonates<br>
+    With Your Intrests.<br>
+<br>
+</h1>
+    <h1 class="pl-56 text-xl font-bold">Top 10 Most Intresting places<br>
+     in the World. Must Visit!  </h1>
+    <svg class="p-2" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"><path fill="#E8317E" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18M10.783 7.99l5.644 3.136a1 1 0 0 1 0 1.748l-5.644 3.136A1.2 1.2 0 0 1 9 14.96V9.04a1.2 1.2 0 0 1 1.783-1.05" clip-rule="evenodd"/></svg>
+    </div>
+    </main>
+    </div>
+    <br>
+    <div id="def" class="pl-16 flex gap-8">
+        <button class="text-white border-2 rounded-full pl-4 pr-4">All</button>
+        <button class="text-white border-2 rounded-full pl-4 pr-4">New to You</button>
+        <button class="text-white border-2 rounded-full pl-4 pr-4">Live </button>
+        <button class="text-white border-2 rounded-full pl-4 pr-4">Stand-Up </button>
+        <button class="text-white border-2 rounded-full pl-4 pr-4">Gaming </button>
+        <button class="text-white border-2 rounded-full pl-4 pr-4">Music</button>
+        <button class="text-white border-2 rounded-full pl-4 pr-4">Cartoon</button>
+        <button class="text-white border-2 rounded-full pl-4 pr-4">Challenges</button>
+        <button class="text-white border-2 rounded-full pl-4 pr-4">Visual Arts</button>
+        <button class="text-white border-2 rounded-full pl-4 pr-4"><a onclick="">></a></button>
+        <!--div id="d">
+            <button class="text-white border-2 rounded-full pl-4 pr-4">Shows</button>
+            <button class="text-white border-2 rounded-full pl-4 pr-4">Entertainment</button>
+            <button class="text-white border-2 rounded-full pl-4 pr-4">Devotional</button>
+            <button class="text-white border-2 rounded-full pl-4 pr-4">More</button>
+        </div-->
+    </div>
+    <br>
+    <div id="card" class="pl-8 flex gap-8">
+        <div class="card w-80 bg-base-100 shadow-xl shadow-white">
+            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-white">Shoes!</h2>
+              <p class="text-white">If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary text-white border-2 border-piink-600">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-80 bg-base-100 shadow-xl shadow-white">
+            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-white">Shoes!</h2>
+              <p class="text-white">If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary text-white border-2 border-piink-600">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-80 bg-base-100 shadow-xl shadow-white">
+            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-white">Shoes!</h2>
+              <p class="text-white">If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary text-white border-2 border-piink-600">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-80 bg-base-100 shadow-xl shadow-white">
+            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-white">Shoes!</h2>
+              <p class="text-white">If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary text-white border-2 border-piink-600">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+    </div>
+</div>
+</div>
+</body>
+</html>
